@@ -2,7 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/Azure-DVWA-ELK.png) & (Images/Azure-DVWA-ELK-Security-Rules.png)
+https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK.png
+
+https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK-Security-Rules.png
+
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. 
 They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ELK-beats-playbook file may be used to install only certain pieces of it, such as Filebeat. Or the separated playbooks for each of the beats can be found here too, filebeat-playbook.yml and metricbeat-playbook.yml.
@@ -98,7 +102,8 @@ The elk.yml playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps.png)
+https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/docker_ps.png
+
 
 ### Target Machines & Beats
 
@@ -149,8 +154,9 @@ To check metricbeat was successfully installed:
 
 
 you should see something like this for filebeat:
-(images/filebeatOK.jpg)
+https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/filebeatOK.jpg
 
 you should see something like this for metricbeat:
-(images/metricbeatOK.jpg)
+https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/metricbeatOK.jpg
+	
 
