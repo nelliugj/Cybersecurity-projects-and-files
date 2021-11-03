@@ -2,9 +2,10 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK.png)
+![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK.png "Diagram ELK Stack")
 
-![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK-Security-Rules.png)
+![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK-Security-Rules.png "Security Groups Rules")
+
 
 
 
@@ -102,7 +103,8 @@ The elk.yml playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/docker_ps.png
+![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/docker_ps.png "Docker ps")
+
 
 
 ### Target Machines & Beats
@@ -143,7 +145,7 @@ use the command: 'nano hosts', to view and modify the file, use Ctrl+x to save t
   and navigate to  installation page on the ELK server GUI
 	
 To check filebeat was successfully installed:
-	http://<KIBANA-SERVER>:5601/app/kibana#/home/tutorial/systemLogs 
+	http://<KIBANA-SERVER>:5601/app/kibana#/home/tutorial/systemLogs
 
 To check metricbeat was successfully installed:
 	http://<KIBANA-SERVER>:5601/app/kibana#/home/tutorial/dockerMetrics
@@ -154,9 +156,11 @@ To check metricbeat was successfully installed:
 
 
 you should see something like this for filebeat:
-https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/filebeatOK.jpg
+![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/filebeatOK.jpg "Filebeat OK")
+	
 
 you should see something like this for metricbeat:
-https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/metricbeatOK.jpg
+![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/metricbeatOK.jpg "Metricbeat OK")
+	
 	
 
