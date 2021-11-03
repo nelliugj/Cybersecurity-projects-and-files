@@ -2,9 +2,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK.png
+(https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK.png)
 
-https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK-Security-Rules.png
+(https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK-Security-Rules.png)
 
 
 
