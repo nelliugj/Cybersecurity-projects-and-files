@@ -12,7 +12,9 @@ Or the separated playbooks for each of the beats can be found here too, filebeat
 Additionally, the configuration files for filebeat-config.yml and metricbeat-config.yml are included as a reference 
 
 [Filebeat](ansible/ansible_config_files/filebeat-config.yml)
+
 [Metricbeat](ansible/ansible_config_files/metricbeat-config.yml)
+
 [And ansible configuration, just in case](ansible/ansible_config_files/ansible.cfg)
 
 The following ansible playbooks were used for setting up the ELK stack and the corresponding beats:
@@ -131,6 +133,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 Copy the ELK-beats-playbook.yml file to /etc/ansible/roles.
 you can download the ELK-beats-playbook using curl -L -O from this repository:
+
 https://github.com/nelliugj/Cybersecurity-projects-and-files/ansible/playbooks/ELK-beats-playbook.yml
 
 Update the '/etc/ansible/hosts' file to include the server(s) where you want this beats to be installed on.
