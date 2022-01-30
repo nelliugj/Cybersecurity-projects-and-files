@@ -2,11 +2,9 @@
 # Automated ELK Stack Deployment
 ## The files in this repository were used to configure the network depicted below.
 
-![alt text][net_diagram]
-[net_diagram]: https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/Azure-DVWA-ELK.png "Network Diagram"
+![alt text](images/Azure-DVWA-ELK.png)
 
-![alt text][sec_rules]
-[sec_rules]: https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/Azure-DVWA-ELK-Security-Rules.png)
+![alt text](images/Azure-DVWA-ELK-Security-Rules.png)
 
 
 
@@ -112,8 +110,7 @@ The elk.yml playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![alt text] [docker]
-[docker]: https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/docker_ps.png "Docker ps"
+![alt text](images/docker_ps.png "Docker ps")
 
 
 
@@ -167,11 +164,12 @@ To check metricbeat was successfully installed:
 
 
 you should see something like this for filebeat:
-![alt text] (https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/filebeatOK.jpg "Filebeat OK")
+![alt text] (images/filebeatOK.png "Filebeat OK")
 	
 
 you should see something like this for metricbeat:
-![alt text] (https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/metricbeatOK.jpg "Metricbeat OK")
+![alt text] (images/metricbeatOK.png "Metricbeat OK")
+	
 	
 	
 
