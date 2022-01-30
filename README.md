@@ -166,6 +166,7 @@ To check metricbeat was successfully installed:
 you should see something like this for filebeat:
 	
 ![alt text] (images/filebeatOK.png)
+
 	
 
 you should see something like this for metricbeat:
