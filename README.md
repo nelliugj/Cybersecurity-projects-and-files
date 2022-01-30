@@ -1,9 +1,8 @@
-					
+
 # Automated ELK Stack Deployment
 ## The files in this repository were used to configure the network depicted below.
 
 ![alt text](images/Azure-DVWA-ELK.png)
-
 ![alt text](images/Azure-DVWA-ELK-Security-Rules.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. 
@@ -13,9 +12,7 @@ Or the separated playbooks for each of the beats can be found here too, filebeat
 Additionally, the configuration files for filebeat-config.yml and metricbeat-config.yml are included as a reference 
 
 [Filebeat](ansible/ansible_config_files/filebeat-config.yml)
-
 [Metricbeat](ansible/ansible_config_files/metricbeat-config.yml)
-
 [And ansible configuration, just in case](ansible/ansible_config_files/ansible.cfg)
 
 The following ansible playbooks were used for setting up the ELK stack and the corresponding beats:
@@ -132,30 +129,30 @@ Metricbeat allows us to collect metrics and statistics from the Operating System
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-
-- Copy the ELK-beats-playbook.yml file to /etc/ansible/roles.
+Copy the ELK-beats-playbook.yml file to /etc/ansible/roles.
 you can download the ELK-beats-playbook using curl -L -O from this repository:
-
 https://github.com/nelliugj/Cybersecurity-projects-and-files/ansible/playbooks/ELK-beats-playbook.yml
 
-- Update the /etc/ansible/hosts file to include the server(s) where you want this beats to be installed on. For our project <webservers> and <elk> were the groups defined in ansible hosts file; and the playbook defines which hosts the beats will be installed on, in our project, beats are only installed on the <webservers> group defined in ansible. see the sample ansible hosts file for reference: ansible_hosts_file.txt
+Update the '/etc/ansible/hosts' file to include the server(s) where you want this beats to be installed on.
+For our project 'webservers' and 'elk' were the groups defined in ansible hosts file; and the playbook defines which hosts the beats will be installed on, in our project, beats are only installed on the 'webservers' group defined in ansible. See the sample ansible hosts file for reference: [ansible_hosts_file.txt](ansible/ansible_hosts_file.txt)
+
 
 use the command: 'nano hosts', to view and modify the file, use Ctrl+x to save the changes.
 
-- Run the playbook using the ansible-playbook command: 'ansible-playbook ELK-beats-playbook.yml'
-  and navigate to  installation page on the ELK server GUI
-	
+Run the playbook using the ansible-playbook command: 'ansible-playbook ELK-beats-playbook.yml' and navigate to installation page on the ELK server GUI.
+
 To check filebeat was successfully installed:
-	http://<KIBANA-SERVER>:5601/app/kibana#/home/tutorial/systemLogs
+http://KIBANA-SERVER:5601/app/kibana#/home/tutorial/systemLogs
+	
 
 To check metricbeat was successfully installed:
-	http://<KIBANA-SERVER>:5601/app/kibana#/home/tutorial/dockerMetrics
-
-   - 	On the same page, scroll to **Step 5: Module Status** and click **Check Data**.
-   - 	Scroll to the bottom of the page and click **Verify Incoming Data** to check that the installation worked as expected.
-
-you should see something like this for filebeat:
-
-	
+http://KIBANA-SERVER:5601/app/kibana#/home/tutorial/dockerMetrics
 	
 
+On the same page, scroll to **Step 5: Module Status** and click **Check Data**.
+Scroll to the bottom of the page and click **Verify Incoming Data** to check that the installation worked as expected.
+You should see something like this for filebeat:
+![alt text](images/filebeatOK.png)
+
+You should see something like this for metricbeat:
+![alt text](images/metricbeatOK.png)
