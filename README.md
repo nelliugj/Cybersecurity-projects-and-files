@@ -1,33 +1,41 @@
-					## Automated ELK Stack Deployment
+					# Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+###The files in this repository were used to configure the network depicted below.
 
-![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK.png "Diagram ELK Stack")
+/tree/main/images/Azure-DVWA-ELK.png 
 
-![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/Azure-DVWA-ELK-Security-Rules.png "Security Groups Rules")
-
+/tree/main/images/Azure-DVWA-ELK-Security-Rules.png)
 
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. 
-They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ELK-beats-playbook file may be used to install only certain pieces of it, such as Filebeat. Or the separated playbooks for each of the beats can be found here too, filebeat-playbook.yml and metricbeat-playbook.yml.
-Additionally the configuration files for filebeat-config.yml and metricbeat-config.yml are included as a reference 
+They can be used to either recreate the entire deployment pictured above. 
+Alternatively, select portions of the ELK-beats-playbook file may be used to install only certain pieces of it, such as Filebeat, for example. 
+Or the separated playbooks for each of the beats can be found here too, filebeat-playbook.yml and metricbeat-playbook.yml.
+Additionally, the configuration files for filebeat-config.yml and metricbeat-config.yml are included as a reference 
+
+##Filebeat:
+/tree/main/ansible/ansible_config_files/filebeat-config.yml
+
+##Metricbeat:
+/tree/main/ansible/ansible_config_files/metricbeat-config.yml
+
+##And ansible configuration, just in case:
+/tree/main/ansible/ansible_config_files/ansible.cfg
+
+The following ansible playbooks were used for setting up the ELK stack and the corresponding beats:
+
+##Ansible playbooks used for this project:
+##ELK stack playbook:
+/tree/main/ansible/playbooks/elk.yml
+##ELK beats playbook:
+/tree/main/ansible/playbooks/ELK-beats-playbook.yml
+/tree/main/ansible/playbooks/filebeat-playbook.yml
+/tree/main/ansible/playbooks/metricbeat-playbook.yml
 
 
+###This document contains the following details:
 
-ansible/ansible_config_files/
-ansible.cfg
-filebeat-config.yml
-metricbeat-config.yml
-
-ansible/playbooks/
-elk.yml
-ELK-beats-playbook.yml
-filebeat-playbook.yml
-metricbeat-playbook.yml
-
-
-This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
@@ -87,9 +95,9 @@ The machines have public IP address, but they are only accessible to any connect
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the deployment is done in a fraction of the time that it would typically required if done manually, and the configuration could be replicated on to other machines with just a few clicks instead of manually setting up the system.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the deployment is done in a fraction of the time that it would typically be required if done manually, and the configuration could be replicated on to other machines with just a few clicks instead of manually setting up the system.
 
-The main advantage of Ansible is that it is open-source, and allows a quick deployment based on yml playbooks (configuration files) that are easy to understand and modify if needed.
+The main advantage of Ansible is that it is open-source, and allows a quick deployment based on .yml playbooks (configuration files) that are easy to understand and modify if needed.
 
 The elk.yml playbook implements the following tasks:
 
@@ -156,11 +164,11 @@ To check metricbeat was successfully installed:
 
 
 you should see something like this for filebeat:
-![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/filebeatOK.jpg "Filebeat OK")
+/tree/main/images/filebeatOK.jpg "Filebeat OK"
 	
 
 you should see something like this for metricbeat:
-![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/metricbeatOK.jpg "Metricbeat OK")
+tree/main/images/metricbeatOK.jpg "Metricbeat OK"
 	
 	
 
