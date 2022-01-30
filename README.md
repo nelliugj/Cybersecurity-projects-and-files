@@ -6,8 +6,6 @@
 
 ![alt text](images/Azure-DVWA-ELK-Security-Rules.png)
 
-
-
 These files have been tested and used to generate a live ELK deployment on Azure. 
 They can be used to either recreate the entire deployment pictured above. 
 Alternatively, select portions of the ELK-beats-playbook file may be used to install only certain pieces of it, such as Filebeat, for example. 
@@ -112,8 +110,6 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![alt text](images/docker_ps.png "Docker ps")
 
-
-
 ### Target Machines & Beats
 
 This ELK server is configured to monitor the following machines:
@@ -132,8 +128,6 @@ We used it to track ssh logon events, but it can also be used to capture system.
 
 Metricbeat allows us to collect metrics and statistics from the Operating System and the services running on the servers, such as Apache, MySQL, Nginx, PostgreSQL, MongoDB, etc. We used it to track CPU usage, Server Load, Memory usage on both of the web servers Web1 and Web2.
 
-
-
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
@@ -143,7 +137,6 @@ SSH into the control node and follow the steps below:
 you can download the ELK-beats-playbook using curl -L -O from this repository:
 
 https://github.com/nelliugj/Cybersecurity-projects-and-files/ansible/playbooks/ELK-beats-playbook.yml
-	
 
 - Update the /etc/ansible/hosts file to include the server(s) where you want this beats to be installed on. For our project <webservers> and <elk> were the groups defined in ansible hosts file; and the playbook defines which hosts the beats will be installed on, in our project, beats are only installed on the <webservers> group defined in ansible. see the sample ansible hosts file for reference: ansible_hosts_file.txt
 
@@ -162,13 +155,7 @@ To check metricbeat was successfully installed:
    - 	Scroll to the bottom of the page and click **Verify Incoming Data** to check that the installation worked as expected.
 
 you should see something like this for filebeat:
-	
-![alt text][filebeat]
-[filebeat]: images/filebeatOK.png "Filebeat OK"
 
-you should see something like this for metricbeat:
-![alt text] [metricbeat]
-[metricbeat]: images/metricbeatOK.png "Metricbeat OK"
 	
 	
 
