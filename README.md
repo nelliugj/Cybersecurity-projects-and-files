@@ -158,19 +158,17 @@ To check filebeat was successfully installed:
 To check metricbeat was successfully installed:
 	http://<KIBANA-SERVER>:5601/app/kibana#/home/tutorial/dockerMetrics
 
-
    - 	On the same page, scroll to **Step 5: Module Status** and click **Check Data**.
    - 	Scroll to the bottom of the page and click **Verify Incoming Data** to check that the installation worked as expected.
 
-
 you should see something like this for filebeat:
 	
-![alt text] (images/filebeatOK.png)
-
-	
+![alt text][filebeat]
+[filebeat]: images/filebeatOK.png "Filebeat OK"
 
 you should see something like this for metricbeat:
-![alt text] (images/metricbeatOK.png)	
+![alt text] [metricbeat]
+[metricbeat]: images/metricbeatOK.png "Metricbeat OK"
 	
 	
 
