@@ -14,23 +14,23 @@ Alternatively, select portions of the ELK-beats-playbook file may be used to ins
 Or the separated playbooks for each of the beats can be found here too, filebeat-playbook.yml and metricbeat-playbook.yml.
 Additionally, the configuration files for filebeat-config.yml and metricbeat-config.yml are included as a reference 
 
-[Filebeat](/tree/main/ansible/ansible_config_files/filebeat-config.yml)
+[Filebeat](ansible/ansible_config_files/filebeat-config.yml)
 
-[Metricbeat](/tree/main/ansible/ansible_config_files/metricbeat-config.yml)
+[Metricbeat](ansible/ansible_config_files/metricbeat-config.yml)
 
-[And ansible configuration, just in case](/tree/main/ansible/ansible_config_files/ansible.cfg)
+[And ansible configuration, just in case](ansible/ansible_config_files/ansible.cfg)
 
 The following ansible playbooks were used for setting up the ELK stack and the corresponding beats:
 
 ##Ansible playbooks used for this project:
 
-[ELK stack playbook](/tree/main/ansible/playbooks/elk.yml)
+[ELK stack playbook](ansible/playbooks/elk.yml)
 
-[ELK beats playbook](/tree/main/ansible/playbooks/ELK-beats-playbook.yml)
+[ELK beats playbook](ansible/playbooks/ELK-beats-playbook.yml)
 
-[Filebeat playbook](/tree/main/ansible/playbooks/filebeat-playbook.yml)
+[Filebeat playbook](ansible/playbooks/filebeat-playbook.yml)
 
-[Metricbeat playbook](/tree/main/ansible/playbooks/metricbeat-playbook.yml)
+[Metricbeat playbook](ansible/playbooks/metricbeat-playbook.yml)
 
 
 ###This document contains the following details:
