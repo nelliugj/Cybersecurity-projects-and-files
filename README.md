@@ -1,10 +1,12 @@
-					# Automated ELK Stack Deployment
+					
+# Automated ELK Stack Deployment
+## The files in this repository were used to configure the network depicted below.
 
-###The files in this repository were used to configure the network depicted below.
+![alt text][net_diagram]
+[net_diagram]: https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/Azure-DVWA-ELK.png "Network Diagram"
 
-/tree/main/images/Azure-DVWA-ELK.png 
-
-/tree/main/images/Azure-DVWA-ELK-Security-Rules.png)
+![alt text][sec_rules]
+[sec_rules]: https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/Azure-DVWA-ELK-Security-Rules.png)
 
 
 
@@ -14,24 +16,23 @@ Alternatively, select portions of the ELK-beats-playbook file may be used to ins
 Or the separated playbooks for each of the beats can be found here too, filebeat-playbook.yml and metricbeat-playbook.yml.
 Additionally, the configuration files for filebeat-config.yml and metricbeat-config.yml are included as a reference 
 
-##Filebeat:
-/tree/main/ansible/ansible_config_files/filebeat-config.yml
+[Filebeat](/tree/main/ansible/ansible_config_files/filebeat-config.yml)
 
-##Metricbeat:
-/tree/main/ansible/ansible_config_files/metricbeat-config.yml
+[Metricbeat](/tree/main/ansible/ansible_config_files/metricbeat-config.yml)
 
-##And ansible configuration, just in case:
-/tree/main/ansible/ansible_config_files/ansible.cfg
+[And ansible configuration, just in case](/tree/main/ansible/ansible_config_files/ansible.cfg)
 
 The following ansible playbooks were used for setting up the ELK stack and the corresponding beats:
 
 ##Ansible playbooks used for this project:
-##ELK stack playbook:
-/tree/main/ansible/playbooks/elk.yml
-##ELK beats playbook:
-/tree/main/ansible/playbooks/ELK-beats-playbook.yml
-/tree/main/ansible/playbooks/filebeat-playbook.yml
-/tree/main/ansible/playbooks/metricbeat-playbook.yml
+
+[ELK stack playbook](/tree/main/ansible/playbooks/elk.yml)
+
+[ELK beats playbook](/tree/main/ansible/playbooks/ELK-beats-playbook.yml)
+
+[Filebeat playbook](/tree/main/ansible/playbooks/filebeat-playbook.yml)
+
+[Metricbeat playbook](/tree/main/ansible/playbooks/metricbeat-playbook.yml)
 
 
 ###This document contains the following details:
@@ -56,9 +57,9 @@ One of the main advantages of a jump box is to control access to a virtual netwo
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for analyzing and troubleshooting.
 
--Filebeat watches for file system information from the servers or locations defined in its configuration to later on forward 	them to Logstash and Elasticsearch. 
+-Filebeat watches for file system information from the servers or locations defined in its configuration to later on forward them to Logstash and Elasticsearch. 
 
--Metricbeat records metrics and statistics from the Operating System and the services running on the server, such as Apache, 	MySQL, Nginx, PostgreSQL, MongoDB, etc.
+-Metricbeat records metrics and statistics from the Operating System and the services running on the server, such as Apache, MySQL, Nginx, PostgreSQL, MongoDB, etc.
 
 The configuration details of each machine may be found below.
 
@@ -111,7 +112,8 @@ The elk.yml playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![alt text](https://github.com/nelliugj/Cybersecurity-projects-and-files/tree/main/images/docker_ps.png "Docker ps")
+![alt text] [docker]
+[docker]: https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/docker_ps.png "Docker ps"
 
 
 
@@ -141,8 +143,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
 - Copy the ELK-beats-playbook.yml file to /etc/ansible/roles.
-you can download the ELK-beats-playbook using curl from this repository:
-$ curl -L -O https://github.com/nelliugj/Cybersecurity-projects-and-files/ansible/playbooks/ELK-beats-playbook.yml
+you can download the ELK-beats-playbook using curl -L -O from this repository:
+
+https://github.com/nelliugj/Cybersecurity-projects-and-files/ansible/playbooks/ELK-beats-playbook.yml
 	
 
 - Update the /etc/ansible/hosts file to include the server(s) where you want this beats to be installed on. For our project <webservers> and <elk> were the groups defined in ansible hosts file; and the playbook defines which hosts the beats will be installed on, in our project, beats are only installed on the <webservers> group defined in ansible. see the sample ansible hosts file for reference: ansible_hosts_file.txt
@@ -164,11 +167,11 @@ To check metricbeat was successfully installed:
 
 
 you should see something like this for filebeat:
-/tree/main/images/filebeatOK.jpg "Filebeat OK"
+![alt text] (https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/filebeatOK.jpg "Filebeat OK")
 	
 
 you should see something like this for metricbeat:
-tree/main/images/metricbeatOK.jpg "Metricbeat OK"
+![alt text] (https://github.com/nelliugj/ELK-stack-deployment/tree/main/images/metricbeatOK.jpg "Metricbeat OK")
 	
 	
 
